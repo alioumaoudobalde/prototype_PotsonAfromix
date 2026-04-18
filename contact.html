@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Réservation | PatsonAfromix Amiens</title>
+    <meta name="description" content="Contactez PatsonAfromix à Amiens et envoyez votre demande de réservation en ligne.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+    <div class="page-loader" data-page-loader aria-hidden="true"><div class="loader-inner"><div class="logo">PatsonAfromix</div><div class="loader-bar"><span></span></div></div></div>
+    <div class="page-transition hidden" data-page-transition aria-hidden="true"></div>
+    <header class="site-header" data-header><div class="container"><a class="logo" href="index.html">PatsonAfromix</a><nav class="nav-desktop" role="navigation" aria-label="Navigation principale"><a class="nav-link" href="index.html">Accueil</a><a class="nav-link" href="services.html">Services</a><a class="nav-link" href="galerie.html">Galerie</a><a class="nav-link" href="avis.html">Avis</a><a class="nav-link" aria-current="page" href="contact.html">Contact</a></nav><div class="nav-actions"><a class="btn btn-primary" href="contact.html">Réserver</a><button class="menu-toggle" data-menu-toggle aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-panel"><span></span><span></span><span></span></button></div></div></header>
+    <aside class="mobile-panel" id="mobile-panel" data-mobile-panel><nav class="mobile-nav" role="navigation" aria-label="Navigation mobile"><a class="nav-link" href="index.html">Accueil</a><a class="nav-link" href="services.html">Services</a><a class="nav-link" href="galerie.html">Galerie</a><a class="nav-link" href="avis.html">Avis</a><a class="nav-link" href="contact.html">Contact</a><a class="btn btn-primary" href="contact.html">Prendre rendez-vous</a></nav></aside>
+    <main id="main-content">
+      <section class="page-hero"><div class="container"><h1>Contact & réservation</h1><p>Une question, un besoin précis ou une demande de rendez-vous ? Écrivez-nous directement.</p></div></section>
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-stack">
+            <article class="contact-card">
+              <div class="contact-item"><span class="icon-badge"><i class="fa-solid fa-location-dot"></i></span><div><strong>Adresse</strong><p class="muted">5 Route de Paris, 80000 Amiens</p></div></div>
+              <iframe class="map-embed" title="Carte Google Maps du salon PatsonAfromix à Amiens" src="https://www.google.com/maps?q=5%20Route%20de%20Paris%2C%2080000%20Amiens&z=15&output=embed"></iframe>
+              <p><a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=5+Route+de+Paris,+80000+Amiens" target="_blank" rel="noreferrer">Obtenir l'itinéraire</a></p>
+            </article>
+            <article class="contact-card">
+              <div class="contact-stack">
+                <div class="contact-item"><span class="icon-badge"><i class="fa-solid fa-phone"></i></span><div><strong>Téléphone</strong><p><a href="tel:+33651920913">06 51 92 09 13</a></p></div></div>
+                <div class="contact-item"><span class="icon-badge"><i class="fa-brands fa-whatsapp"></i></span><div><strong>WhatsApp</strong><p><a href="https://wa.me/33651920913">+33 6 51 92 09 13</a></p></div></div>
+                <table class="hours-table" aria-label="Horaires du salon"><tbody><tr><td>Lundi</td><td>10h00 – 19h00</td></tr><tr><td>Mardi</td><td>10h00 – 19h00</td></tr><tr><td>Mercredi</td><td>10h00 – 19h00</td></tr><tr><td>Jeudi</td><td>10h00 – 19h00</td></tr><tr><td>Vendredi</td><td>10h00 – 19h00</td></tr><tr><td>Samedi</td><td>09h00 – 18h00</td></tr><tr><td>Dimanche</td><td class="closed">Fermé</td></tr></tbody></table>
+                <div class="social-links"><a class="btn btn-outline" href="#" aria-label="Facebook du salon">Facebook</a><a class="btn btn-outline" href="#" aria-label="Instagram du salon">Instagram</a></div>
+              </div>
+            </article>
+          </div>
+          <article class="form-card">
+            <h2 class="section-title" style="font-size:2rem;">Formulaire de réservation</h2>
+            <p class="form-note">Réponse sous 24h ouvrées.</p>
+            <form class="form-grid" data-booking-form novalidate>
+              <div class="field-row">
+                <div class="form-field"><input id="firstName" name="firstName" type="text" placeholder="Prénom" data-validate><label for="firstName">Prénom *</label><div class="error-text" aria-live="polite"></div></div>
+                <div class="form-field"><input id="lastName" name="lastName" type="text" placeholder="Nom" data-validate><label for="lastName">Nom *</label><div class="error-text" aria-live="polite"></div></div>
+              </div>
+              <div class="field-row">
+                <div class="form-field"><input id="phone" name="phone" type="tel" placeholder="Téléphone" data-validate><label for="phone">Téléphone *</label><div class="error-text" aria-live="polite"></div></div>
+                <div class="form-field"><input id="email" name="email" type="email" placeholder="Email" data-validate><label for="email">Email *</label><div class="error-text" aria-live="polite"></div></div>
+              </div>
+              <div class="field-row">
+                <div class="form-field"><select id="service" name="service" required data-validate><option value=""></option><option>Tressage</option><option>Tissage</option><option>Défrisage</option><option>Soins capillaires</option><option>Coupes</option><option>Coloration</option><option>Événementiel</option><option>Coiffure afro enfant</option></select><label for="service">Prestation souhaitée *</label><div class="error-text" aria-live="polite"></div></div>
+                <div class="form-field"><input id="date" name="date" type="date" data-validate><label for="date">Date souhaitée *</label><div class="error-text" aria-live="polite"></div></div>
+              </div>
+              <div class="form-field"><select id="time" name="time"><option value=""></option><option>10h</option><option>11h</option><option>12h</option><option>14h</option><option>15h</option><option>16h</option><option>17h</option><option>18h</option></select><label for="time">Heure préférée</label></div>
+              <div class="form-field"><textarea id="message" name="message" maxlength="500" placeholder="Votre message"></textarea><label for="message">Message libre</label><div class="char-counter" data-char-counter>0/500</div></div>
+              <div class="checkbox-group"><label class="checkbox-row" for="consent"><input id="consent" name="consent" type="checkbox" data-validate> J’accepte d’être recontacté(e) dans le cadre de ma demande de réservation. *</label><div class="error-text" aria-live="polite"></div></div>
+              <button class="btn btn-primary" type="submit">Envoyer ma demande</button>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+    <div class="modal hidden" data-success-modal><div class="modal-card"><p style="font-size:2rem;color:var(--color-success);margin:0;">✓</p><h2>Demande envoyée !</h2><p>Nous vous recontactons sous 24h.</p><button class="btn btn-primary" type="button" data-modal-close>Fermer</button></div></div>
+    <footer class="site-footer"><div class="container"><div class="footer-grid"><div><div class="logo">PatsonAfromix</div><p>Réservez votre passage au salon ou contactez-nous pour un conseil personnalisé.</p></div><div><h3 class="footer-title">Liens rapides</h3><div class="footer-links"><a href="index.html">Accueil</a><a href="services.html">Services</a><a href="galerie.html">Galerie</a><a href="avis.html">Avis</a></div></div><div><h3 class="footer-title">Horaires</h3><div class="footer-links"><span>Lun-Ven : 10h00–19h00</span><span>Samedi : 09h00–18h00</span><span>Dimanche : Fermé</span></div></div><div><h3 class="footer-title">Contact</h3><div class="footer-links"><a href="tel:+33651920913">06 51 92 09 13</a><a href="https://wa.me/33651920913">WhatsApp</a><span>5 Route de Paris, Amiens</span></div></div></div><div class="footer-bottom"><span>© 2026 PatsonAfromix.</span><span>Démo vitrine générée pour prototype.</span></div></div></footer>
+    <a class="floating-whatsapp pulse-green" href="https://wa.me/33651920913" target="_blank" rel="noreferrer" aria-label="Contacter le salon sur WhatsApp" data-tooltip="Chattez avec nous"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+    <button class="to-top hidden" type="button" data-back-to-top aria-label="Retour en haut"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
